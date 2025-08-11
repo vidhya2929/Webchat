@@ -1,0 +1,30 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+.formGrp{
+  margin-bottom: 15px;
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+}
+input{
+  padding: 8px;
+  width: 250px;
+}
+.error{
+  color: red;
+  font-size: 0.9em;
+}
+button{
+  padding: 8px 15px;
+  background: #ff3f6c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:disabled{
+  background: gray;
+  cursor: not-allowed;
+}

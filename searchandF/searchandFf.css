@@ -1,0 +1,23 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+.searchBox{
+  margin-bottom: 20px;
+}
+input{
+  padding: 8px;
+  width: 300px;
+}
+.product{
+  margin: 8px 0;
+  font-size: 18px;
+}
+.highlight{
+  background: yellow;
+}
+#noResult{
+  color: red;
+  font-weight: bold;
+  display: none;
+}
