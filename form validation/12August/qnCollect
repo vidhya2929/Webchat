@@ -1,0 +1,108 @@
+Got it — you want a **practical, must-know JavaScript program list** that every developer should be comfortable with, whether for interviews, real-world projects, or problem-solving.
+
+I’ll break this into **categories** so you see *why* each program matters.
+
+---
+
+## **1. Strings – Real-world Handling**
+
+* **Reverse a string** – core manipulation skill
+* **Check palindrome** – understanding loops and conditions
+* **Count vowels/consonants** – data parsing skills
+* **Capitalize first letter of each word** – UI text formatting
+* **Find frequency of characters in a string** – for analytics/log analysis
+
+---
+
+## **2. Arrays – Data Operations**
+
+* **Find max and min** without built-in methods
+* **Remove duplicates** (Set, filter, reduce)
+* **Merge and sort arrays**
+* **Rotate array by N positions**
+* **Find the intersection of two arrays**
+
+---
+
+## **3. Numbers – Logic & Math**
+
+* **Check prime number** – loops, conditions
+* **Generate Fibonacci sequence** – iterative & recursive versions
+* **Factorial** – iterative & recursive versions
+* **Sum of digits of a number**
+* **Check Armstrong number**
+
+---
+
+## **4. Objects – Real-world Use**
+
+* **Clone an object** (shallow vs deep copy)
+* **Merge multiple objects**
+* **Count object properties**
+* **Convert object to array & vice versa**
+* **Group objects by a property**
+
+---
+
+## **5. DOM & Events – Web Projects**
+
+* **To-do list** with add/delete
+* **Form validation** (email, password)
+* **Real-time search filter**
+* **Image slider/carousel**
+* **Dark/Light mode toggle**
+
+---
+
+## **6. Higher-Order Functions**
+
+* **Custom `map`, `filter`, `reduce` implementations**
+* **Sort objects by property**
+* **Debounce and throttle functions**
+* **Chaining multiple array methods**
+
+---
+
+## **7. Algorithms – Interview Ready**
+
+* **Binary search** (iterative & recursive)
+* **Bubble sort, quick sort, merge sort**
+* **Find two numbers that sum to a target** (Two-pointer method)
+* **Balanced parentheses checker** (Stack)
+* **String anagram checker**
+
+---
+
+## **8. Asynchronous JavaScript**
+
+* **Fetch API data and display**
+* **Simulate API call with `setTimeout`**
+* **Promise chaining**
+* **Async/await error handling**
+
+---
+
+## **9. ES6+ Features**
+
+* **Destructuring assignment** in functions
+* **Rest and spread operators** usage
+* **Default parameters**
+* **Arrow functions** vs regular functions
+* **Modules (`import`/`export`)**
+
+---
+
+## **10. Real-world Mini Utilities**
+
+* **Generate random password**
+* **Format date & time**
+* **Convert CSV to JSON**
+* **LocalStorage CRUD**
+* **Download data as file**
+
+---
+
+If you want, I can make a **full "developer-ready" JavaScript workbook** for you —
+with **code + explanation + beginner-to-pro progression**, so you can *both* prepare for interviews and improve for real-world development.
+
+Do you want me to start with **Strings section** and go step-by-step? That way you master each category completely.

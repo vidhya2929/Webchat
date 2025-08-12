@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factorial Calculator</title>
+  <link rel="stylesheet" href="fact.css">
+</head>
+<body>
+  <div class="card">
+    <h1>factorial calculator</h1>
+
+    <div class="row">
+      <input type="number" id="num" min="0" placeholder="Enter a non-negative integer (e.g. 5)">
+      <select id="mode" title="choose method">
+        <option value="iterative">Iterative</option>
+        <option value="recursive">Recursive</option>
+      </select>
+      <button id="calc">Calculate</button>
+    </div>
+    <div id="output" class="result">result will appear here.</div>
+    <div class="note">Tip: Iteraative method is efficient. Recursive method is simple but can hit call- stack limits for large inputs.</div>
+    <h2 style="font-size: 16px; margin-top: 16px;">Code Used</h2>
+    <pre id="codeBlock">//code will appear here</pre>
+  </div>
+  <script src="fact.js"></script>
+</body>
+</html>
