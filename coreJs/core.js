@@ -134,3 +134,23 @@ setTimeout(()=>{
   console.log("After 2 seconds");
 }, 2000);
 console.log("End");
+
+
+console.log("Start");
+setTimeout(()=>{
+  console.log("After 2 seconds");
+},2000);
+console.log(arr2);
+
+console.log("End");
+
+console.log("Start");
+setTimeout(()=>{
+  console.log("After 2 seconds");
+},2000);
+console.log(arr2);
+
+console.log("Start");
+setTimeout(()=>{
+  console.log("After 2 seconds");
+})

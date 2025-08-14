@@ -54,18 +54,19 @@
  </style> -->
  <!-- 😌 -->
 <!-- E -COMMERCE CART -->
- <!-- <div class="product">
-  <h3>Phone</h3>
+<!-- <div class="product">
+  <h3>Moto E7 Plus</h3>
   <p>₹15000</p>
-  <button class="AddToCart">Add to Cart</button>
- </div>
- <h2>Cart:</h2>
- <ul id="cartList"></ul> -->
+  <button class="addToCart">Add To Cart</button>
+</div>
+<h2>Cart:</h2>
+<ul id="cartList"></ul> -->
   <!-- 😌 -->
  <!-- API DATA DISPLAY -->
   <!-- <div id="UserData">Loading...</div>   Initially shows "Loading..." until the data is fetched -->
  <!-- 😌 -->
   <!-- TABS NAVIGATION -->
+   <!-- switches between different content sections without reloading the page -->
    <!-- <div class="tabs">
     <button class="tab active" data-target="tab1">Home</button>
     <button class="tab" data-target="tab2">About</button> -->
@@ -75,6 +76,20 @@
    <div id="tab1" class="tabContent">This is Home</div>
    <div id="tab2" class="tabContent" style="display: none;">This is About</div> -->
  <!-- 😌 -->
+   <!-- LIVE CHARACTER COUNT -->
+    <!-- <textarea id="message" maxlength="50" placeholder="Type Something..."></textarea>             maxlength="50 =>browser will block typing beyond 50 characters -->
+    <!-- <p>characters left: <span id="charCount">50</span></p>                                            Initially shows 50(since no characters are typed yet) -->
+     <!-- 😌 -->
+      <!-- DRAG AND DROP -->
+       <!-- <div id="drag" draggable="true" style="width: 50px;height: 50px;background: red;"></div>
+       <div id="dropZone" style="width: 200px;height: 200px;border: 2px dashed black;margin-top: 20px;"></div> -->
+  <!-- 😌 -->
+  <!-- SCROLL TO TOP BUTTON -->
+  <!-- <button id="topBtn" style="position:fixed;bottom: 10px;">Top</button>     -->
+  <!-- 😌 -->
+  <!-- COPY TO CLIPBOARD -->
+   <!-- <p id="txt">Hello World</p>
+   <button id="copy">Copy</button> -->
 
   <script>
     // TO-DO LIST
@@ -98,82 +113,74 @@
     // });
   111111111111111111111111111111111111111111111111111111111111111111111111111111
     // SEARCH FILTER
-    // const search = document.getElementById("search");
-    // search.addEventListener("input", e => {
-    //   // "e" is the event object that stores info about the input event 
-    //   const value = e.target.value.toLowerCase();
-    //   // e.target() => refers to the element that triggered the event
-    //   // .value => gets the current text entered by the user
-    //   document.querySelectorAll(".item").forEach(item => {
-    //     // find all elements with class ".item" and loops through each ".item" element one by one.
-    //     item.style.display = item.textContent.toLowerCase().includes(value) ? "block" : "none"
-    //   });
-    // });
+      // const search = document.getElementById("search");
+      // search.addEventListener("input", e=>{
+      //   const value = e.target.value.toLowerCase();
+      //   document.querySelectorAll(".item").forEach(item =>{
+      //     item.style.display = item.textContent.toLowerCase().includes(value) ? "block" : "none";
+      //   });
+      // });
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     // FORM VALIDATION
     // const form = document.getElementById("myForm");
     // const username = document.getElementById("username");
     // const errorMsg = document.getElementById("errorMsg");
 
-    // form.addEventListener("submit", (e) => {
-    //   // Listens for the submit event on the form, e is the event object containing details about the submission
+    // form.addEventListener("submit", (e)=>{
     //   e.preventDefault();
-    //   // stops the form's default behaviour when submitted
-    //   if (username.value.trim() === "") {
-    //     // check if the input field is empty
-    //     errorMsg.textContent = "Username is required!";
-    //   } else {
+    //   if(username.value.trim() === ""){
+    //     errorMsg.textContent = `username is required`;
+    //   }
+    //   else{
     //     errorMsg.textContent = "";
-    //     // clears any previous error message
-    //     alert(`Welcome, ${username.value}!`);
+    //     alert(`Welcome,${username.value}!`);    //username is the object representation of the element,not the text inside it that's why we use "username.value"...
     //   }
     // });
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     // MODAL POPUP
     // const modal = document.getElementById("modal");
-    // document.getElementById("openModal").addEventListener("click", ()=>{
-    //   modal.style.display = "block";
-    // });
-    // document.getElementById("closeModal").addEventListener("click", () => {
-    //   modal.style.display = "none";
-    // });
+    // const open = document. getElementById("openModal");
+    // const close = document.getElementById("closeModal");
+    // open.addEventListener("click", ()=> modal.style.display = "block");
+    // close.addEventListener("click", ()=> modal.style.display = "none");
     11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
     // DROPDOWN MENU
-    // const menu = document.getElementById("dropdownMenu");
-    // document.getElementById("dropdownBtn").addEventListener("click", ()=>{
-    //   menu.style.display = menu.style.display === "none" ? "block" : "none";
-      // here above "menu.style.display" gets the current inline css display value of the dropdown
-    // });
+  // const button = document.getElementById("dropdownBtn");
+  // const menu = document.getElementById("dropdownMenu");
+  // button.addEventListener("click", ()=>{
+  //   menu.style.display = menu.style.display === "none" ? "block" : "none";
+  // });
     1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
 // DARK/LIGHT MODE TOGGLE
-    // const btn = document.getElementById("toggleTheme");
-    // btn.addEventListener("click", ()=> {
-    //   document.body.classList.toggle("dark");
-    //   // classList is a property of an element in JavaScript
-    //   // add,remove,toggle and check
-    // });
+  //  const btn = document.getElementById("toggleTheme");
+  //  btn.addEventListener("click", ()=>{
+  //   document.body.classList.toggle("dark");
+  //  })
 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
 // E-COMMERCE CART
-// const cart = [];
-// // An empty array that will store cart items as objects
-// document.querySelectorAll(".AddToCart").forEach(btn =>{
-//   // find all buttons with the class "AddToCart" and loops through each button giving you one btn at a time
-//   btn.addEventListener("click", (e)=>{  // "e" => event Object
-//     const product = e.target.closest(".product"); //e.target => the exact button clicked
-//     // .closest(",product") => moves up the DOM tree to find the nearest parent with class "product".
-//     const name = product.querySelector("h3").textContent;
-//     const price = +product.querySelector("p").textContent.replace("₹", ""); 
-//     //  + => here converts 15000(dtring) --> 15000(number).
-//     cart.push({name, price});
-//     // Adds a new object to the cart array.
-//     renderCart();
-//     // Calls the function that will update the cart display
-//   });
-// });
+    // const cart = []; // creates an empty array and push the product into it when someone clicks the "Add to cart"
+    // document.querySelectorAll("addToCart").forEach(btn =>{
+    //   btn.addEventListener("click", (e)=>{
+    //     const product = e.target.closest(".product"); //.closest(".product") walks up the DOM tree from that element to find the nearest ancestor with class "product"
+    //     const name = product.querySelector("h3").textContent;
+    //     const price = +product.querySelector("p").textContent.replace("₹", ""); //remove rupee sign and convert the string("499") to number(499) using "+"(unary plus operator) 
+    //     cart.push({name, price});
+    //     renderCart(); //after updating the data, call renderCart() to update the UI
+    //   });
+    // });
 // function renderCart(){
 //   const cartList = document.getElementById("cartList");
 //   cartList.innerHTML = cart.map(({name, price})=> `<li> ${name} - ₹${price}</li>`).join("");
 // }
+
+// map() => loops through each item and runs a function you give it on each item and returns a new array with transformed values.(does not change the original array)
+// join() => here it removes commas by combining everything into one big string of HTML before putting it in innerHTML
+
+// innerHTML => replaces the inside of the element with the HTML ypu give it
+// innerText => the visible text inside an element,it will not include text from elements hidden via CSS
+// textContent => All the text inside the element, even if it is hidden, it only returns the text,no formatting
+// value => the user entered or default value of the fieldx
+
 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
 // API DATA DISPLAY
 // document.addEventListener("DOMContentLoaded", ()=>{
@@ -209,6 +216,45 @@
 //   });
 // });
 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+//LIVE-CHARACTER COUNT
+// const textarea = document.getElementById("message");
+// const charCount = document.getElementById("charCount");
+
+// textarea.addEventListener("input", () => {
+//   const remaining = 50 - textarea.value.length;
+//   charCount.textContent = remaining;
+// });
+11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+// const dragItem = document.getElementById("dragItem");
+// const dropZone = document.getElementById("dropZone");
+
+// dragItem.addEventListener("dragStart",e => {
+//   // dragstart fires when you start dragging the red box.
+//   e.dataTransfer.setData("text", e.target.id);
+//   // e.dataTransfer => special object for passing data during drag and drop
+//   // setData("text", e.target.id) -> store the id("dragItem") so we can retrieve it later in the drop event
+// });
+// dropZone.addEventListener("dragStart", e =>{
+//   // by default, most element do not alow drop
+//   e.preventDefault();
+//   // e.preventDefault() signals to the browser => this rea is a drop target
+// });
+// dropZone.addEventListener("drop", e => {
+//   // "drop" fires when you release the mouse in the drop zone.
+//   e.preventDefault();
+//   // stops default browser behavior
+//   const id = e.dataTransfer.getData("text");
+//   // getData("text") retrieves the stored "dragItem" ID from dragstart
+//   const item = document.getElementById(id);
+//   // finds the dragged element.
+//   dropZone.appendChild(item);
+//   // moves the dragged element to the drop zone.
+// });
+111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+// topBtn.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+// copy.onclick=()=>navigator.clipboard.writeText(txt.textContent);
+copy.onclick=()=>navigator.clipboard.writeText(txt.textContent)
   </script>
 </body>
 </html>
