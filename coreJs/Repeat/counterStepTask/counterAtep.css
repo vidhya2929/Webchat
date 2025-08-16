@@ -1,0 +1,14 @@
+#count{
+  font-size: 36px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+#step{
+  display: block;
+  padding: 10px 20px;
+  caret-color: blue;
+  margin-bottom: 20px;
+}
+#inc,#dec,#reset{
+  padding: 10px 25x;
+}
