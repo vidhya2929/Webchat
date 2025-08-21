@@ -117,129 +117,129 @@
 //   p.remove();
 // }
 // Simple Object
-let Person = {
-  name: "Harry",
-  age: 21,
-  city: "Banglore"
-};
+// let Person = {
+//   name: "Harry",
+//   age: 21,
+//   city: "Banglore"
+// };
 
-console.log(Person["name"]);
-console.log(Person.age);
+// console.log(Person["name"]);
+// console.log(Person.age);
 // Object with Function(Method)
-let student={
-  name: "Dupe",
-  marks: 90,
-  greet: function(){
-    return "Hello, "+ this.name;
-  }
-};
-console.log(student.greet());
+// let student={
+//   name: "Dupe",
+//   marks: 90,
+//   greet: function(){
+//     return "Hello, "+ this.name;
+//   }
+// };
+// console.log(student.greet());
 // Nested Objects
-let user = {
-  id: 1,
-  profile: {
-    username: "dupe@22",
-    email: "dupe22@gmail.com"
-  }
-};
-console.log(user.profile.email);
+// let user = {
+//   id: 1,
+//   profile: {
+//     username: "dupe@22",
+//     email: "dupe22@gmail.com"
+//   }
+// };
+// console.log(user.profile.email);
 // Array of Objects
-let products = [
-  {name: "Laptop",price:50000},
-  {name: "Phone", price: 20000},
-  {name: "Tablet", price: 15000}
-];
-products.forEach(p => console.log(p.name + " - " +p.price));
+// let products = [
+//   {name: "Laptop",price:50000},
+//   {name: "Phone", price: 20000},
+//   {name: "Tablet", price: 15000}
+// ];
+// products.forEach(p => console.log(p.name + " - " +p.price));
 // Everything in JS is an Object(Arrays, Functions, DOM elements)
 // Objects are used in APIs
 // They are the base for OOP(Object-Oriented Programming).
-let fruits = ["Apple", "Banana", "Mango"];
-console.log(fruits[0]);
-console.log(fruits[2]);
+// let fruits = ["Apple", "Banana", "Mango"];
+// console.log(fruits[0]);
+// console.log(fruits[2]);
 
-let numbers = [1,2,3,4];
-numbers.forEach(n => console.log(n*2));
+// let numbers = [1,2,3,4];
+// numbers.forEach(n => console.log(n*2));
 
-let nums = [10,20,30,40];
+// let nums = [10,20,30,40];
 
-let doubled = nums.map(n => n*2);
+// let doubled = nums.map(n => n*2);
 
-let above20 = nums.filter(n => n >20);
+// let above20 = nums.filter(n => n >20);
 
-let sum = nums.reduce((acc, n)=> acc+n, 0);
+// let sum = nums.reduce((acc, n)=> acc+n, 0);
 // Used to store lists of data(users,products,scores, etc.)
 // Most real-world JS problems use arrays(like rendering products on amazon,comments on Youtube.etc.)
 // You'll combine arrays + object a lot in projects
 // Functions
-function greet(name){
-  return 'Hello '+name;
-}
-console.log(greet("harry"));
-const greet = function(name){
-  return "Hello "+name;
-};
-console.log(greet("Vidhya"));
-// Arrow
-const greet = (name) => "Hello, "+name;
-console.log(greet("World"));
-// Default Parameters
-function multiply(a, b=2){
-  return a*b;
-}
-console.log(multiply(5));
-console.log(multiply(5,3));
-// Rest Parameters
-function sum(...numbers){
-  return numbers.reduce((acc,n)=> acc+n, 0);
-}
-console.log(sum(1,2,3,4));
-// Functions returning Functions
-function outer(x){
-  return function inner(y){
-    return x + y;
-  };
-}
-const add5 = outer(5);
-console.log(add5(10));
+// function greet(name){
+//   return 'Hello '+name;
+// }
+// console.log(greet("harry"));
+// const greet = function(name){
+//   return "Hello "+name;
+// };
+// console.log(greet("Vidhya"));
+// // Arrow
+// const greet = (name) => "Hello, "+name;
+// console.log(greet("World"));
+// // Default Parameters
+// function multiply(a, b=2){
+//   return a*b;
+// }
+// console.log(multiply(5));
+// console.log(multiply(5,3));
+// // Rest Parameters
+// function sum(...numbers){
+//   return numbers.reduce((acc,n)=> acc+n, 0);
+// }
+// console.log(sum(1,2,3,4));
+// // Functions returning Functions
+// function outer(x){
+//   return function inner(y){
+//     return x + y;
+//   };
+// }
+// const add5 = outer(5);
+// console.log(add5(10));
 
-const book = {title: "JS Guide", author: "MDN"};
-const{title,author} = book
-console.log(title);
-console.log(author);
-// All code you write in JS is inside functions(event handlers, API calls,utilities, etc)
-// Functions power callbacks and higher-order-functions(like map,filter,reduce)
-// They connect with events(onclick, onchange), timers(setTimeout), and async code.
-// "this" keyword in JS
+// const book = {title: "JS Guide", author: "MDN"};
+// const{title,author} = book
+// console.log(title);
+// console.log(author);
+// // All code you write in JS is inside functions(event handlers, API calls,utilities, etc)
+// // Functions power callbacks and higher-order-functions(like map,filter,reduce)
+// // They connect with events(onclick, onchange), timers(setTimeout), and async code.
+// // "this" keyword in JS
 
-// "this" in a simple object
-const person = {
-  name: "Vidhya",
-  greet: function(){
-    console.log("Hello I am ", +this.name);
-  }
-};
-person.greet();
-// "this" in normal function
-function showThis(){
-  console.log(this);
-}
-showThis();  //In browser => window, In strict mode -> undefined
+// // "this" in a simple object
+// const person = {
+//   name: "Vidhya",
+//   greet: function(){
+//     console.log("Hello I am ", +this.name);
+//   }
+// };
+// person.greet();
+// // "this" in normal function
+// function showThis(){
+//   console.log(this);
+// }
+// showThis();  //In browser => window, In strict mode -> undefined
 
-// "this" inside an object but using arrow function
-const userr = {
-  name: "Priya",
-  greet: () => {
-    console.log("Hello "+this.name);
-  }
-};
-userr.greet(); //Hello undefined because arrow functions do not bind their own "this"
+// // "this" inside an object but using arrow function
+// const userr = {
+//   name: "Priya",
+//   greet: () => {
+//     console.log("Hello "+this.name);
+//   }
+// };
+// userr.greet(); //Hello undefined because arrow functions do not bind their own "this"
 
-// "this" in a constructor function
-function Person(name){
-  this.name = name;
-}
-const p1 = new Person("Harry");
-console.log(p1.name);
+// // "this" in a constructor function
+// function Person(name){
+//   this.name = name;
+// }
+// const p1 = new Person("Harry");
+// console.log(p1.name);
 
 // With "new", "this" refers to the new object being created
 
@@ -248,4 +248,111 @@ console.log(p1.name);
 // Arrow Function => no own "this", takes from outer scope
 // Constructor => this = new object
 // Event handler => this = element
-// 
+
+// REVERSE A STRING
+function reversedString(str){
+  let reversed = "";
+  for(let i = str.length-1; i>=0;i--){
+    reversed += str[i];
+  }
+  return reversed
+}
+console.log(reversedString("Harry"));
+// Using recursion
+function reverseString(str){
+  if(str === "")return "";
+  return reverseString(str.substr(1)) + str[0];
+}
+  // str.substr(1)) => gives the string without the first character
+console.log(reverseString("Harry Potter"));
+// avascript +j
+// vascript +ja
+// ..............................
+// Using reduce
+function reverseString(str){
+  return str.split("").reduce((rev, char)=> char + rev, "");
+  // str.split("") => split the string into an array of characters:
+  // coding => ["c","o","d","i","n","g"]
+}
+console.log(reverseString("Coding"));
+// "c" + ""
+// "o" + "c"
+//"d " + "oc"
+
+// Using Built- in- Method
+function reversed(str){
+  return str.split("").reverse().join("");
+}
+console.log(reverseString("Hello"));
+
+// PRIME NUMBER CHECK
+// Basic Loop
+function isPrime(n){
+  if(n <= 1) return false;
+  for(let i = 0; i < n; i++){
+    if(n % 2 === 0) return false;
+  }
+  return true;
+}
+console.log(isPrime(2));
+// Optimized (check up to root n)
+
+function isPrime(n){
+  if(n<=1) return false;
+
+  for(let i = 2; i <= Math.sqrt(n); i++){
+    if(n % i === 0) return false;
+  }
+  return true;
+}
+console.log(isPrime(29));
+console.log(isPrime(49));
+
+// FACTORIAL NUMBER
+// Using a Loop
+function factorial(n){
+  if(n < 0) return "Not defined"; // factorial doesn't exist for negative numbers
+  let result = 1;
+  for(let i = 1; i <= n; i++){
+    result *=i;
+  }
+  return result;
+}
+console.log(factorial(5));
+console.log(factorial(0));
+// Using Recursion
+function factorial(n){
+  if(n < 0)return "Not defined";
+  if(n === 0 || n === 1)return 1;
+  return n* factorial(n-1);
+}
+console.log(factorial(5));
+// 5 * factorial(4)
+// 5 * 4 * factorial(3)
+// ..........................................
+// FIBONACCI SEQUENCE
+// each number is the sum of the previous two : F(n) = F(n-1) + F(n-2)
+function fibonacci(n){
+  let seq = [0,1];
+  for(let i = 2; i < n;i++){
+    seq[i] = seq[i-1]+ seq[i-2];
+  }
+  return seq.slice(0, n);
+  // array.slice(start,end) -> returns a new array from index start up to end. It does not modify the original array. end is not included in it
+
+}
+console.log(fibonacci(7));
+
+
+// DOM MANIPULATION
+
+const btn = document.getElementsById("clickMe");
+btn.textContent = "But Now";
+const item = document.createElemntt("li");
+item.textContent = "New Product";
+document.querySelector("ul").appendChild(item);
+
+// EVENTS & EVENT HANDLING */
+document.getElementById("search").addEventListener("input", e => {
+  console.log("User Typed:", e.target.value);
+});
